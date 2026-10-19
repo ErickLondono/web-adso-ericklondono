@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat, 'Arial';
+    background-color: #f2f4f7;
+    color: #1f2933;
+}
+
+
+/* ------ DARK MODE ------ */
+body.dark {
+    background-color: #111827;
+}
+
+
+
+body.dark .card {
+    background-color: #1f2937;
+    border-color: #374151;
+    box-shadow: 12px 10px 14px #fff1;
+}
+
+body.dark .rol {
+    color: #86efac;
+}
+
+body.dark .ciudad {
+    color: #9ca3af;
+}
+
+body.dark .habilidades li {
+    background-color: #374151;
+    color: #d1fae5;
+}
+
+body.dark h2, body.dark h1 {
+    color: #d1fae5;
+}
+
+/* ---------------- */
+
+
+.card {
+    max-width: 360px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid #e4e7eb;
+    background-color: #fff;
+    box-shadow: 15px 10px 14px #0002;
+    border-radius: 10px;
+}
+
+.card__avatar {
+    width: 96px;
+    height: 96px;
+    margin: 1rem auto 2rem;
+    border-radius: 50%;
+    background-color: #e3f5d8;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 96px;
+}
+
+
+#nombre {
+    font-size: 1.5rem;
+}
+
+.rol {
+    color: #2e7d00;
+    font-weight: 600;
+}
+
+.ciudad {
+    margin-bottom: 1.5rem;
+}
+
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.habilidades {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.habilidades li {
+    display: inline-block;
+    margin: 0.4rem 0;
+    padding: .6rem;
+    border-radius: 999px;
+    background-color: #2e7d0055;
+    color: #000a;
+    font-weight: 600;
+}
+
+.boton {
+    padding: 12px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2e7d00;
+    color: #fff;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #2e7d00dd;
+}
+
+.boton:focus-visible {
+    outline: 3px solid #ffb300;
+    outline-offset: 4px;
+}
+
