@@ -1,0 +1,84 @@
+
+/* WEB PARA APRENDER: w3schools.com*/
+
+
+/* ESTRUCTURA PARA DEFINIR ESTILOS EN CSS:
+
+selector {
+    propiedad: valor;
+}
+
+*/
+
+/* Selector unviersal (se usa un asterisco, aplica estilos a todos los elementos HTML. Útil para quitar valores por defecto que define el navegador) */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ */
+
+/* formato hexadecimal: 0 - 9 , a - f
+
+RGB: RED - GREEN - BLUE
+HEXADECIMAL -> #ff0000 -> RED
+
+*/
+
+/* Selección básica por nombre de etiqueta */
+h1 {
+    color: #4488ee; /* puedes simplificarlo a #48e */
+    font-size: 35px;
+    padding: 10px 15px;
+    background-color: #00000011;
+    border-left: 5px solid #48e;
+}
+
+
+/* Selección por nombre de clase */
+.name-color {
+    padding: 5px;
+    font-size: 20px;
+    background-color: #0002;
+    color: #4488ee;
+}
+
+/* Selección por nombre de id*/
+#logo-SENA {
+    font-weight: bold;
+    padding: 5px;
+    background-color: #000;
+    color: #29ee0b;
+    letter-spacing: 4px;
+}
+
+/* Selección por descendencia, selecciona todos los 'a' que esten dentro de 'nav' */
+nav a {
+    text-decoration: none;
+    color: #48e;
+    font-weight: 600;
+}
+
+
+/* Selección por agrupación */
+h2, h3, h4 {
+    color: #48e;
+    text-align: center;
+
+}
+
+body {
+    font-family: Montserrat;
+}
+
+
+hr {
+    height: 2px;
+    background-color: #48e;
+    border: none;
+}
+
+#portada {
+    width: 300px;
+}
