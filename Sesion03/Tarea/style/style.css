@@ -1,4 +1,11 @@
 
+/* ¿Por qué es mejor un solo styles.css que poner los estilos en cada página? 
+- Poner los estilos en una sola hoja otorga más estructuración y organización en un proyecto. Con un buen nombramiento de clases podemos llegar a evitar la integración de propiedades CSS dentro de cada HTML, además evita la repetición y carga de estilos comúnes que pueden compartirse (reutilización de estilos). 
+*/
+
+/* Si un h2 tiene una regla de etiqueta y otra de clase con colores distintos, ¿cuál gana y por qué?
+-Ganan los estilos definidos por la clase. Ya que la regla de clase tiene mayor especificidad que una regla por nombre de etiqueta. Cuando ponemos el cursor por encima del selector podemos ver una ventana emergente de información, abajo aparecerá el nivel de especificidad (0, 0, 1) -> (selector de id, selector de clase, selector de etiqueta). Si ambos tienen el mismo nivel de especificidad entonces ganará el que esté más abajo (cascada).
+*/
 * {
     margin: 0;
     padding: 0;
