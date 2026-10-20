@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat, 'Arial';
+    background-color: #f5f7f5;
+    color: #1f2933;
+}
+
+
+/* ------ DARK MODE ------ */
+body.dark {
+    background-color: #151c19;
+}
+
+body.dark .card {
+    background-color: #222d27;
+    border: 1px solid #151c19;
+    box-shadow: 5px 5px 20px #fff1;
+}
+
+body.dark hr {
+    background: linear-gradient(to right, #36b58d , transparent);
+}
+
+body.dark .rol {
+    color: #b9c5be;
+}
+
+body.dark .ciudad {
+    color: #e7f0e9;
+}
+
+body.dark .habilidades li {
+    background-color: #374151;
+    color: #e7f0e9;
+}
+
+body.dark h2, body.dark h1 {
+    color: #e7f0e9;
+}
+
+body.dark .boton {
+    background-color: #36b58d;
+    color: #151c19;
+}
+
+
+/* ---------------- */
+
+
+.card {
+    max-width: 360px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid #e4e7eb;
+    background-color: #ffffff;
+    box-shadow: 15px 10px 14px #0002;
+    border-radius: 10px;
+}
+
+.card__avatar {
+    width: 96px;
+    height: 96px;
+    margin: 1rem auto 2rem;
+    border-radius: 50%;
+    background-color: #e3f5d8;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 96px;
+}
+
+.card__avatar img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+hr {
+    width: 260px;
+    height: 3px;
+    border: none;
+    background: linear-gradient(to right, #168568 , transparent);
+    margin-bottom: 1rem;
+}
+
+#nombre {
+    font-size: 1.5rem;
+    
+}
+
+.rol {
+    color: #526158;
+    font-weight: 600;
+}
+
+.ciudad {
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #24352d;
+}
+
+.habilidades {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.habilidades li {
+    display: inline-block;
+    margin: 0.4rem 0;
+    padding: 0.6rem;
+    border-radius: 8px;
+    background-color: #95939466;
+    color: #24352d;
+    font-weight: 600;
+}
+
+.boton {
+    padding: 12px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #168568;
+    color: #151c19;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #168568dd;
+}
+
+.boton:focus-visible {
+    outline: 3px solid #168568;
+    outline-offset: 4px;
+}
+
+.oculto {
+    display: none;
+}
