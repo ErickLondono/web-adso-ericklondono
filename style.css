@@ -1,0 +1,123 @@
+
+/* DIFERENCIAS ENTRE PADDING Y MARGIN:
+-->El padding representa en el box-model el espacio interno entre el contenido y el borde (relleno), mientras que el margen representa el espacio externo, permite separar elementos de otros.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat;
+    font-size: 15px;
+    background-color: #111827;
+    color: #f9fafb;
+}
+
+
+/* ------ HEADER ------ */
+
+.header {
+    background-color: #1f2937;
+    padding: 20px;
+}
+
+.header__info {
+    max-width: 400px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.header__info h1 {
+    margin-bottom: 10px;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.header__info p {
+    line-height: 1.7;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+
+/* ------ MAIN ------ */
+
+.main {
+    padding: 20px;
+}
+
+
+.section-card > h2 {
+    text-align: center;
+    margin: 15px 0;
+    letter-spacing: 2px;
+}
+
+.container-card {
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    margin: auto;
+}
+
+.card {
+    width: 280px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #1f2937;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 1.1em;
+    font-weight: 200;
+    text-align: center;
+}
+
+.card a {
+    display: inline-block;
+    padding: 8px 15px;
+    color: #fff;
+    background-color: #a3e635;
+    color: #000;
+    font-weight: 500;
+    margin-top: auto;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.card a:hover {
+    background-color: #4d7c0f;
+    color: #fff;
+}
+
+
+/* ------ FOOTER ------ */
+
+.footer {
+    height: 70px;
+    display: flex;
+    background-color: #1f2937;
+
+}
+
+.footer p {
+    margin: auto;
+}
