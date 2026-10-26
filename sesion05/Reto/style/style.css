@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Montserrat;
+    background-color: #f5f7fa;
+    font-size: 15px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.5em;
+}
+
+
+form {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 0 15px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.campo label {
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.campo input, select {
+    padding: 8px 14px;
+    border-radius: 7px;
+    border: 1px solid #d9e6dd;
+}
+
+.campo select {
+    font-family: inherit;
+    font-weight: 400;
+}
+
+.seccion-datos legend, .seccion-cursos legend {
+    
+    font-weight: 600;
+    color: #173b32;
+}
+
+.seccion-datos, .seccion-cursos {
+    background-color: #fff;
+    border: 1px solid #d9e6dd;
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.seccion-jornadas legend, .seccion-terminos legend {
+    margin-bottom: 10px;
+    color: #000;
+    font-size: 0.9em;
+    font-weight: 500;
+    
+}
+
+.seccion-jornadas , .seccion-terminos {
+    border: none;
+}
+
+.opciones-jornada {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.seccion-jornadas label {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 7px 15px;
+    border: 1px solid #d9e6dd;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    transition: width 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.seccion-jornadas label input {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.seccion-jornadas label:has([type="radio"]:checked){
+    color: #fff;
+    background-color: #173b32;
+    width: 55%;
+}
+
+.seccion-terminos label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.84em;
+
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: #173b32;
+    color: #fff;
+    padding: 12px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 0.9em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #225649;
+}
+
+input:user-invalid, select:user-invalid, .invalido{
+    border: 1px solid #c62828;
+    background-color: #fbf7f7;
+} 
+
+input:focus {
+    outline: 2px solid #225649;
+    outline-offset: 4px;
+}
