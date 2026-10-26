@@ -1,0 +1,183 @@
+
+/* ¿Por qué es mejor un solo styles.css que poner los estilos en cada página? 
+- Poner los estilos en una sola hoja otorga más estructuración y organización en un proyecto. Con un buen nombramiento de clases podemos llegar a evitar la integración de propiedades CSS dentro de cada HTML, además evita la repetición y carga de estilos comúnes que pueden compartirse (reutilización de estilos). 
+*/
+
+/* Si un h2 tiene una regla de etiqueta y otra de clase con colores distintos, ¿cuál gana y por qué?
+-Ganan los estilos definidos por la clase. Ya que la regla de clase tiene mayor especificidad que una regla por nombre de etiqueta. Cuando ponemos el cursor por encima del selector podemos ver una ventana emergente de información, abajo aparecerá el nivel de especificidad (0, 0, 1) -> (selector de id, selector de clase, selector de etiqueta). Si ambos tienen el mismo nivel de especificidad entonces ganará el que esté más abajo (cascada).
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #171717;
+    color: #D4B483;
+}
+
+nav {
+    background-color: #D4B483;
+    
+}
+
+nav ul {
+    
+    display: flex;
+    list-style: none;
+    padding: 15px;
+    gap: 1em;
+}
+
+nav a {
+    color: #171717;
+    text-decoration: none;
+}
+
+main {
+    margin-top: 1em;
+    padding: 10px 20px;
+}
+
+section {
+    margin: 2em 0;
+}
+
+
+footer {
+    padding: 18px;
+    background-color: #D4B483;
+    color: #171717;
+}
+
+
+.pagina-inicio main img {
+    width: 300px;
+    height: 400px;
+}
+
+.pagina-inicio h1 {
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.pagina-inicio h2 {
+    padding: 10px 0px 20px 0px;
+    text-decoration: underline;
+}
+
+
+table {
+    margin-top: 10px;
+    border-collapse: collapse;
+    background-color: #D4B483;
+    color: #171717;
+}
+
+th, td {
+    border: 1px solid #0004;
+    padding: 10px;
+}
+
+th {
+    background-color: #fff3;
+}
+
+caption {
+    border: 1px solid #0003;
+    border-bottom: none;
+    background-color: inherit;
+    font-weight: bold;
+    color: inherit;
+    padding: 8px;
+}
+
+
+/* ESTILOS FORMULARIO contacto.html */
+
+
+.formulario-contacto {
+    max-width: 550px;
+    margin: 40px auto;
+    padding: 32px;
+    background-color: #243029;
+    color: #F1E6D0;
+    border: 1px solid #3D493F;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+}
+
+.formulario-contacto h2 {
+    margin-top: 0;
+    color: #D4B483;
+    font-size: 1.8rem;
+}
+
+.formulario-contacto p {
+    margin-bottom: 28px;
+    color: #C5C9C1;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.campo label {
+    font-weight: 600;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #687267;
+    border-radius: 6px;
+    background-color: #18221C;
+    color: #F1E6D0;
+    font: inherit;
+}
+
+.campo textarea {
+    resize: none;
+    min-height: 120px;
+    max-height: 280px;
+    field-sizing: content;
+
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: 2px solid #D4B483;
+    outline-offset: 2px;
+}
+
+.campo input:user-invalid,
+.campo select:user-invalid,
+.campo textarea:user-invalid {
+    border-color: #E57373;
+}
+
+.formulario-contacto button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #D4B483;
+    color: #18221C;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.formulario-contacto button:hover {
+    background-color: #E4C99F;
+}
