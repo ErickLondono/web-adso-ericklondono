@@ -1,0 +1,176 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #151515;
+    color: #ffffff;
+}
+
+.app {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 220px 1fr 260px;
+    grid-template-rows: 70px 1fr auto;
+    grid-template-areas:
+        "encabezado encabezado encabezado"
+        "menu contenido alertas"
+        "pie pie pie";
+    gap: 15px;
+    padding: 15px;
+}
+
+/* Encabezado */
+
+.app-encabezado {
+    grid-area: encabezado;
+    background-color: #242424;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Menú lateral */
+
+.app-menu {
+    grid-area: menu;
+    background-color: #242424;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.app-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.app-menu a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Contenido */
+
+.app-contenido {
+    grid-area: contenido;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.app-contenido h1 {
+    color: #b57aff;
+}
+
+
+/* panel alertas */
+
+.app-alertas {
+    grid-area: alertas;
+    background-color: #242424;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+/* Indicadores */
+
+.indicadores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.indicador {
+    background-color: #242424;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #a855f7;
+}
+
+.titulo {
+    color: #aaaaaa;
+    margin-bottom: 12px;
+}
+
+.valor {
+    font-size: 24px;
+    font-weight: bold;
+    color: #b57aff;
+}
+
+/* Galería de productos */
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.productos h2 {
+    color: #b57aff;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.producto {
+    background-color: #242424;
+    border: 1px solid #7137a8;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.producto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.producto-info {
+    padding: 15px;
+}
+
+.producto-info h3 {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.producto-info p {
+    color: #b57aff;
+    font-weight: bold;
+}
+
+/* Producto destacado */
+
+.producto-destacado {
+    grid-column: span 2;
+}
+
+/* Pie de página */
+
+.app-pie {
+    grid-area: pie;
+    background-color: #242424;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: #aaaaaa;
+}
