@@ -1,3 +1,10 @@
+
+
+/* CUANDO USAR FLEXBOX Y GRID:
+
+usaría flexbox cuando se necesite organizar elementos en una sola dirección, por ejemplo para organizar una barra de navegación, muy util para pie de páginas tambien, centrar ciertos elementos. Grid al ofrecer heramientas tan poderosas como grid-areas, lo podemos usar para estructurar una pagina web (elaborar el layout), también para un cátalogo de productos, galerías, etc. 
+*/
+
 * {
     margin: 0;
     padding: 0;
