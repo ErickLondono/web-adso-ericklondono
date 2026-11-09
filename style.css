@@ -3,24 +3,45 @@
 -->El padding representa en el box-model el espacio interno entre el contenido y el borde (relleno), mientras que el margen representa el espacio externo, permite separar elementos de otros.
 */
 
+/* MOBILE FIRST
+Mobile first se refiere a enforcarse primeramente en la estructuración de un diseño orientado a pantallas mobiles (resoluciones pequeñas), esto con una ventaja clara, dado que normalmente el diseño mobile es mucho más simple priorizando velocidad. Además gran parte de los usuarios entran dia a dia mediante celulares
+*/
+
+
+:root {
+    /* Colores principales */
+    --color-fondo: #111827;
+    --color-superficie: #1f2937;
+
+    /* Textos */
+    --color-texto: #f9fafb;
+    --color-texto-boton: #000;
+    --color-texto-hover: #fff;
+
+    /* Elementos */
+    --color-acento: #a3e635;
+    --color-hover: #4d7c0f;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Montserrat;
     font-size: 15px;
-    background-color: #111827;
-    color: #f9fafb;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
 }
 
 
 /* ------ HEADER ------ */
 
 .header {
-    background-color: #1f2937;
+    background-color: var(--color-superficie);
     padding: 20px;
 }
 
@@ -50,7 +71,6 @@ body {
     padding: 20px;
 }
 
-
 .section-card > h2 {
     text-align: center;
     margin: 15px 0;
@@ -58,12 +78,11 @@ body {
 }
 
 .container-card {
-    max-width: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 20px;
     padding: 10px;
     margin: auto;
 }
@@ -76,7 +95,7 @@ body {
     flex-direction: column;
     padding: 15px;
     border-radius: 8px;
-    background-color: #1f2937;
+    background-color: var(--color-superficie);
 }
 
 .card h2 {
@@ -94,9 +113,8 @@ body {
 .card a {
     display: inline-block;
     padding: 8px 15px;
-    color: #fff;
-    background-color: #a3e635;
-    color: #000;
+    background-color: var(--color-acento);
+    color: var(--color-texto-boton);
     font-weight: 500;
     margin-top: auto;
     text-decoration: none;
@@ -104,8 +122,8 @@ body {
 }
 
 .card a:hover {
-    background-color: #4d7c0f;
-    color: #fff;
+    background-color: var(--color-hover);
+    color: var(--color-texto-hover);
 }
 
 
@@ -114,10 +132,28 @@ body {
 .footer {
     height: 70px;
     display: flex;
-    background-color: #1f2937;
-
+    background-color: var(--color-superficie);
 }
 
 .footer p {
     margin: auto;
+}
+
+
+/* ------ MEDIA QUERIES ------ */
+
+@media (max-width: 950px) {
+    .container-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .container-card {
+        grid-template-columns: 1fr;
+    }
 }
